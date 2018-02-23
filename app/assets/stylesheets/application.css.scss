@@ -11,13 +11,40 @@
  * It is generally better to create a new file per style scope.
  *
  *= require devise_bootstrap_views
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
- .results-block {
-    display: inline-block;
+ 
+.results-block {
+  display: inline-block;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.left-padding {
+  padding-left: 15px !important;
+}
+
+.logout {
+  padding-left: 0;
+}
+
+.user-name {
+  padding-top: 15px;
+}
+
+.nav.navbar-right li {
+  .btn {
+    color: rgb(13, 240, 6) !important;
+    margin-top: 5%;
   }
-  
-  .no-padding {
-    padding: 0 !important;
+  .btn-danger:hover {
+    background-color: darken(#f40f07, 20%) !important;
   }
+}
+
+
+
